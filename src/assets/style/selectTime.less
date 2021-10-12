@@ -1,0 +1,39 @@
+@charset "utf-8";
+.father-box,
+.son-box {
+  margin-right: 20px;
+}
+.father-box .el-form-item {
+  margin: 0;
+}
+.father-box {
+  .select-btn {
+    float: right;
+  }
+  .select-filter {
+    border-radius: 3px;
+    text-align: center;
+  }
+  .select-filter img {
+    height: 12px;
+  }
+}
+  //设置本组件卡片背景色
+/deep/ .el-card .el-card__body {
+  background-color: rgba(244, 245, 247, 1);
+}
+/deep/ .son-box .el-card .el-card__body {
+  display: flex;
+  .left,
+  .center,
+  .right1,
+  .right2,
+  .right3 {
+    flex: 1;
+    // border: 1px solid red;
+  }
+}
+// 设置输入框的宽度
+.el-form-item .el-input {
+  width: 10vw;
+}

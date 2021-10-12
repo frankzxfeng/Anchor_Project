@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* 弹窗页面样式 */
+/deep/ .el-dialog .el-dialog__body {
+    padding: 0;
+    margin: 0;//弹窗页面边距设置
+  }
+  /deep/ .el-dialog .el-dialog__title {
+    font-weight: bold;//弹窗title字体设置
+  }
+
+/* 滚动条样式设置 */
+/deep/ .scrollbar {
+    .el-scrollbar__wrap {
+      // 必要的
+      // overflow: scroll;
+      // width: 100%;  //隐藏侧边默认滚动条 （达不到效果可以自己试着微调） 如解决不了可尝试用 `margin-right -60px`
+      height: 103%; //隐藏底部滚动条  （100%如果达不到效果可以试着用110%）
+    }
+  }
+
+/*   输入框样式设置 */
+/deep/ .el-form-item--mini.el-form-item {
+    margin-bottom: 6px;//输入框的间距
+    .el-input--mini .el-input__inner {
+        height: 25px;//输入框高度
+        line-height: 25px;
+      }
+  }
+
+/* 分割线样式 */
+/deep/ .el-divider--horizontal {
+    margin: 0px;//分割线外边距
+    background-color: rgba(48, 127, 253, 100);
+  }
+
+  
